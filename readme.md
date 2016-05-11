@@ -57,3 +57,4 @@ it to a server somewhere and create a workflow to access your script as a webhoo
 
 - I got the idea from [these instructions](http://hubhacker.com/use-hubspot-vid-as-a-contact-property/) on hubhacker.com (*although I did not watch the video or download the script*)
 - The [original idea thread](http://ideas.hubspot.com/forums/76407-general-hubspot-ideas/suggestions/6243558-assign-unique-contact-id-or-use-the-vid-that-alre) on the Hubspot forums.
+- Uses my [fungku/hubspot-php](https://github.com/ryanwinchester/hubspot-php) package for the API.
