@@ -1,4 +1,13 @@
 <?php
+/**
+ * This file is part of the Focus\HubspotId package.
+ *
+ * @package    focuscanada/custom-hubspot-id
+ * @author     Ryan Winchester <fungku@gmail.com>
+ * @copyright  2016 Focus on the Family Canada Association
+ * @license    https://opensource.org/licenses/MIT  MIT
+ * @link       https://github.com/focuscanada/custom-hubspot-id
+ */
 
 namespace Focus\HubspotId;
 
