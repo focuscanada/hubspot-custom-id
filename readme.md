@@ -29,7 +29,7 @@ Name it something like `custom_id`, and make it a **single line text** field.
 You will need to create a new *smart list* that contains only contacts that `custom_id` property is `not known`.
 Remember the ID of that list.
 
-#### 3. Use it
+##### 3. Use it
 
 ```php
 use Fungku\HubSpot\HubSpotService;
@@ -44,3 +44,7 @@ $sync = new SyncService($hubspot, $hubspot_property);
 
 $sync->syncList($hubspot_list_id);
 ```
+
+
+### Credits
+I got the idea from the instructions at http://hubhacker.com/use-hubspot-vid-as-a-contact-property/ although I did not watch the video or download the script.
