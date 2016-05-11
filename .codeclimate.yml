@@ -1,18 +1,24 @@
 engines:
   phpcodesniffer:
     enabled: true
+    checks:
+      Squiz Scope MethodScope Missing:
+        enabled: false
   phpmd:
     enabled: true
+    checks:
+      Controversial/CamelCaseParameterName:
+        enabled: false
   duplication:
     enabled: true
     config:
-        languages:
+      languages:
         - php
 
 ratings:
   paths:
-  - src/**
-  - "**.php"
+    - src/**
+    - "**.php"
 
 exclude_paths:
   - tests/**/*
