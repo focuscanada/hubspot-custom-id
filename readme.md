@@ -49,6 +49,9 @@ $sync = new SyncService($hubspot, $hubspot_property);
 $sync->syncList($hubspot_list_id);
 ```
 
+##### 4. Make a workflow (optional)
+If you don't want it to run just as something like a cron job, or manually. Then you can deploy
+it to a server somewhere and create a workflow to access your script as a webhook.
 
 ### Credits
 I got the idea from the instructions at http://hubhacker.com/use-hubspot-vid-as-a-contact-property/ although I did not watch the video or download the script.
