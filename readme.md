@@ -1,6 +1,6 @@
 # Hubspot custom ID property sync script
- [![Packagist](https://img.shields.io/packagist/v/focuscanada/hubspot-custom-id.svg?maxAge=2592000)](https://packagist.org/packages/focuscanada/hubspot-custom-id) 
- [![license](https://img.shields.io/github/license/focuscanada/hubspot-custom-id.svg?maxAge=2592000)](https://github.com/focuscanada/hubspot-custom-id) 
+ [![Version](https://img.shields.io/packagist/v/focuscanada/hubspot-custom-id.svg?maxAge=2592000)](https://packagist.org/packages/focuscanada/hubspot-custom-id) 
+ [![License](https://img.shields.io/packagist/l/focuscanada/hubspot-custom-id.svg?maxAge=2592000)](https://github.com/focuscanada/hubspot-custom-id) 
  [![Travis](https://travis-ci.org/focuscanada/hubspot-custom-id.svg?branch=master)](https://travis-ci.org/focuscanada/hubspot-custom-id)
  [![Test Coverage](https://codeclimate.com/github/focuscanada/hubspot-custom-id/badges/coverage.svg)](https://codeclimate.com/github/focuscanada/hubspot-custom-id/coverage)
  [![Code Climate](https://codeclimate.com/github/focuscanada/hubspot-custom-id/badges/gpa.svg)](https://codeclimate.com/github/focuscanada/hubspot-custom-id)
