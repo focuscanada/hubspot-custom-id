@@ -54,4 +54,6 @@ If you don't want it to run just as something like a cron job, or manually. Then
 it to a server somewhere and create a workflow to access your script as a webhook.
 
 ### Credits
-I got the idea from the instructions at http://hubhacker.com/use-hubspot-vid-as-a-contact-property/ although I did not watch the video or download the script.
+
+- I got the idea from the instructions at http://hubhacker.com/use-hubspot-vid-as-a-contact-property/ although I did not watch the video or download the script.
+- The [original idea thread](http://ideas.hubspot.com/forums/76407-general-hubspot-ideas/suggestions/6243558-assign-unique-contact-id-or-use-the-vid-that-alre) on the Hubspot forums.
