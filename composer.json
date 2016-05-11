@@ -1,0 +1,29 @@
+{
+    "name": "ryanwinchester/hubspot-custom-id",
+    "description": "Sync a Custom ID property to Hubspot contacts",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Winchester",
+            "email": "fungku@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.5.9",
+        "fungku/hubspot-php": "dev-master@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.3",
+        "satooshi/php-coveralls": "0.6.*",
+        "codeclimate/php-test-reporter": "@dev",
+        "mockery/mockery": "^0.9.4"
+    },
+    "autoload": {
+        "psr-4": { "Winchester\\HubspotId\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\": "tests/" }
+    }
+}

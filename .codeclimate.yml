@@ -1,0 +1,18 @@
+engines:
+  phpcodesniffer:
+    enabled: true
+  phpmd:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+        languages:
+        - php
+
+ratings:
+  paths:
+  - src/**
+  - "**.php"
+
+exclude_paths:
+  - tests/**/*
