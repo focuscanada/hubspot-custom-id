@@ -42,9 +42,5 @@ $hubspot_property = 'custom_id';
 $hubspot = HubSpotService::make($hubspot_api_key);
 $sync = new SyncService($hubspot, $hubspot_property);
 
-$sync->sync_list($hubspot_list_id);
+$sync->syncList($hubspot_list_id);
 ```
-
-#### If using a Service Provider for your framework
-The Hubspot service class will look for the environment variables: `HUBSPOT_API_KEY` and
-`HUBSPOT_PROPERTY`.
