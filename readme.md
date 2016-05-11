@@ -25,6 +25,8 @@ composer require ryanwinchester/hubspot-custom-id
 ##### 1. Create a new contact property for the custom ID
 Name it something like `custom_id`, and make it a **single line text** field.
 
+![Custom property](https://s3-us-west-2.amazonaws.com/ryanwinchester/code/hubspot-custom-id/custom-property.png)
+
 ##### 2. Create a new smart list
 You will need to create a new *smart list* that contains only contacts where the `custom_id` property is `unknown`.
 Remember the ID of that list. (*It should be the number as the last component of the url when editing the list*)
