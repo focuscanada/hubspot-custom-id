@@ -1,5 +1,5 @@
 {
-    "name": "ryanwinchester/hubspot-custom-id",
+    "name": "focuscanada/hubspot-custom-id",
     "description": "Sync a Custom ID property to Hubspot contacts",
     "license": "MIT",
     "authors": [
@@ -21,7 +21,7 @@
         "mockery/mockery": "^0.9.4"
     },
     "autoload": {
-        "psr-4": { "Winchester\\HubspotId\\": "src/" }
+        "psr-4": { "Focus\\HubspotId\\": "src/" }
     },
     "autoload-dev": {
         "psr-4": { "Tests\\": "tests/" }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Winchester\HubspotId;
+namespace Focus\HubspotId;
 
 use Fungku\HubSpot\HubSpotService;
 

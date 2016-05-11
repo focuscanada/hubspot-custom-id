@@ -1,8 +1,7 @@
 # Hubspot custom ID property sync script
- [![Travis](https://travis-ci.org/ryanwinchester/hubspot-custom-id.svg?branch=master)](https://travis-ci.org/ryanwinchester/hubspot-custom-id)
- [![Test Coverage](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id/badges/coverage.svg)](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id/coverage)
- [![Code Climate](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id/badges/gpa.svg)](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id)
-
+ [![Travis](https://travis-ci.org/focuscanada/hubspot-custom-id.svg?branch=master)](https://travis-ci.org/focuscanada/hubspot-custom-id)
+ [![Test Coverage](https://codeclimate.com/github/focuscanada/hubspot-custom-id/badges/coverage.svg)](https://codeclimate.com/github/focuscanada/hubspot-custom-id/coverage)
+ [![Code Climate](https://codeclimate.com/github/focuscanada/hubspot-custom-id/badges/gpa.svg)](https://codeclimate.com/github/focuscanada/hubspot-custom-id)
 
 You find you need to do anything fancy but there is no way to uniquely identify users apart from their
 email address? Well here is a hokey-pokey work-around.
@@ -17,7 +16,7 @@ We can then use it to identify the user that clicked the email on the target pag
 ### Install
 
 ```
-composer require ryanwinchester/hubspot-custom-id
+composer require focuscanada/hubspot-custom-id
 ```
 
 ### Usage
@@ -36,8 +35,8 @@ Remember the ID of that list. (*It should be the number as the last component of
 ##### 3. Use it
 
 ```php
+use Focus\HubspotId\SyncService;
 use Fungku\HubSpot\HubSpotService;
-use Winchester\HubspotId\SyncService;
 
 $hubspot_api_key = 'demo';
 $hubspot_list_id = '12345';
@@ -55,6 +54,6 @@ it to a server somewhere and create a workflow to access your script as a webhoo
 
 ### Credits
 
-- I got the idea from [these instructions](http://hubhacker.com/use-hubspot-vid-as-a-contact-property/) on hubhacker.com (*although I did not watch the video or download the script*)
+- The idea came from [these instructions](http://hubhacker.com/use-hubspot-vid-as-a-contact-property/) on hubhacker.com.
 - The [original idea thread](http://ideas.hubspot.com/forums/76407-general-hubspot-ideas/suggestions/6243558-assign-unique-contact-id-or-use-the-vid-that-alre) on the Hubspot forums.
-- Uses my [fungku/hubspot-php](https://github.com/ryanwinchester/hubspot-php) package for the API.
+- Uses [fungku/hubspot-php](https://github.com/ryanwinchester/hubspot-php) package for the API.
