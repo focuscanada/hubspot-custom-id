@@ -7,29 +7,29 @@ use Fungku\HubSpot\HubSpotService;
 class SyncService
 {
     private $hubspot;
-    private $id_property;
+    private $property;
 
     /**
      * @param HubSpotService $hubspot
-     * @param string $id_property The name of the custom ID property
+     * @param string $property The name of the custom ID property
      */
-    function __construct(HubSpotService $hubspot, $id_property)
+    function __construct(HubSpotService $hubspot, $property)
     {
         $this->hubspot = $hubspot;
-        $this->id_property;
+        $this->property = $property;
     }
 
     /**
      * Sync the IDs of contacts from a list.
      *
      * @param int $list_id The Hubspot list id
+     * @param int $count The number of contacts to sync at a time
+     * @param int $vid_offset The offset to start with
      * @return int The number of contacts affected
      */
-    function syncList($list_id)
+    function syncList($list_id, $count = 100, $vid_offset = 0)
     {
         $updated = 0;
-        $count = 100;
-        $vid_offset = 0;
         $has_more = true;
 
         while ($has_more) {
@@ -55,7 +55,7 @@ class SyncService
                 "vid" => $contact->vid,
                 "properties" => [
                     [
-                        "property" => $this->id_property,
+                        "property" => $this->property,
                         "value" => base64_encode($contact->vid),
                     ],
                 ],
