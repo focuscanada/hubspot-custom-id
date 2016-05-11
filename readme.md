@@ -1,4 +1,8 @@
 # Hubspot custom ID property sync script
+ [![Travis](https://img.shields.io/travis/ryanwinchester/hubspot-custom-id.svg?maxAge=2592000?style=flat-square)](https://travis-ci.org/ryanwinchester/hubspot-custom-id)
+ [![Code Climate](https://img.shields.io/codeclimate/coverage/github/ryanwinchester/hubspot-custom-id?maxAge=2592000?style=flat-square)](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id/coverage)
+ [![Code Climate](https://img.shields.io/codeclimate/github/ryanwinchester/hubspot-custom-id.svg?maxAge=2592000?style=flat-square)](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id)
+
 
 You find you need to do anything fancy but there is no way to uniquely identify users apart from their
 email address? Well here is a hokey-pokey work-around.
