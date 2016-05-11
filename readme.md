@@ -1,7 +1,7 @@
 # Hubspot custom ID property sync script
- [![Travis](https://img.shields.io/travis/ryanwinchester/hubspot-custom-id.svg?maxAge=2592000?style=flat-square)](https://travis-ci.org/ryanwinchester/hubspot-custom-id)
- [![Code Climate Coverage](https://img.shields.io/codeclimate/coverage/github/ryanwinchester/hubspot-custom-id?maxAge=2592000?style=flat-square)](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id/coverage)
- [![Code Climate](https://img.shields.io/codeclimate/github/ryanwinchester/hubspot-custom-id.svg?maxAge=2592000?style=flat-square)](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id)
+ [![Travis](https://travis-ci.org/ryanwinchester/hubspot-custom-id.svg?branch=master)](https://travis-ci.org/ryanwinchester/hubspot-custom-id)
+ [![Test Coverage](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id/badges/coverage.svg)](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id/coverage)
+ [![Code Climate](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id/badges/gpa.svg)](https://codeclimate.com/github/ryanwinchester/hubspot-custom-id)
 
 
 You find you need to do anything fancy but there is no way to uniquely identify users apart from their
