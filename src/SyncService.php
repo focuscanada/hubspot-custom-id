@@ -2,9 +2,11 @@
 /**
  * This file is part of the focuscanada/custom-hubspot-id package.
  *
- * @author   Ryan Winchester <fungku@gmail.com>
- * @license  MIT https://opensource.org/licenses/MIT
- * @see      https://github.com/focuscanada/custom-hubspot-id
+ * @author    Ryan Winchester <fungku@gmail.com>
+ * @license   MIT
+ * @license   https://opensource.org/licenses/MIT
+ * @copyright 2016 Focus on the Family Canada Association
+ * @link      https://github.com/focuscanada/custom-hubspot-id
  */
 
 namespace Focus\HubspotId;
