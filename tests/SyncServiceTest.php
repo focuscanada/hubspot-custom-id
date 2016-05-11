@@ -17,7 +17,7 @@ class SyncServiceTest extends \PHPUnit_Framework_TestCase
     {
         $sync = new SyncService(new HubspotSpy(), 'custom_id');
 
-        $this->assertEquals(3, $sync->sync_list('123456'));
+        $this->assertEquals(3, $sync->syncList('123456'));
     }
 
     /** @test */
@@ -26,7 +26,7 @@ class SyncServiceTest extends \PHPUnit_Framework_TestCase
         $hubspot = new HubspotSpy();
         $sync = new SyncService($hubspot, 'custom_id');
 
-        $this->assertEquals(3, $sync->sync_contacts($hubspot->contacts));
+        $this->assertEquals(3, $sync->syncContacts($hubspot->contacts));
     }
 }
 

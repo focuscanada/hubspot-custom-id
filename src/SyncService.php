@@ -25,7 +25,7 @@ class SyncService
      * @param int $list_id The Hubspot list id
      * @return int The number of contacts affected
      */
-    function sync_list($list_id)
+    function syncList($list_id)
     {
         $updated = 0;
         $count = 100;
@@ -33,10 +33,10 @@ class SyncService
         $has_more = true;
 
         while ($has_more) {
-            $list = $this->get_list($list_id, $count, $vid_offset);
+            $list = $this->getList($list_id, $count, $vid_offset);
             $has_more = $list->{'has-more'};
             $vid_offset = $list->{'vid-offset'};
-            $updated += $this->sync_contacts($list->contacts);
+            $updated += $this->syncContacts($list->contacts);
         }
 
         return $updated;
@@ -48,7 +48,7 @@ class SyncService
      * @param array $contacts The contacts to sync
      * @return int The number of contacts affected
      */
-    function sync_contacts($contacts = [])
+    function syncContacts($contacts = [])
     {
         $contacts = array_map(function ($contact) {
             return [
@@ -62,7 +62,7 @@ class SyncService
             ];
         }, $contacts);
 
-        $this->update_contacts($contacts);
+        $this->updateContacts($contacts);
 
         return count($contacts);
     }
@@ -75,7 +75,7 @@ class SyncService
      * @param int $vid_offset
      * @return \Fungku\HubSpot\Http\Response
      */
-    function get_list($list_id, $count = 100, $vid_offset = 0)
+    function getList($list_id, $count = 100, $vid_offset = 0)
     {
         return $this->hubspot->contactLists()->contacts($list_id, [
             "count" => $count,
@@ -88,7 +88,7 @@ class SyncService
      *
      * @param array $contacts
      */
-    function update_contacts($contacts = [])
+    function updateContacts($contacts = [])
     {
         $this->hubspot->contacts()->createOrUpdateBatch($contacts);
     }

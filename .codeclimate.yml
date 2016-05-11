@@ -4,6 +4,8 @@ engines:
     checks:
       Squiz Scope MethodScope Missing:
         enabled: false
+      PSR1 Methods CamelCapsMethodName NotCamelCaps:
+        enabled: false
   phpmd:
     enabled: true
     checks:
