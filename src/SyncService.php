@@ -10,7 +10,7 @@ class SyncService
     private $property;
 
     /**
-     * @param HubSpotService $hubspot
+     * @param HubSpotService $hubspot My Hubspot API client
      * @param string $property The name of the custom ID property
      */
     function __construct(HubSpotService $hubspot, $property)
@@ -23,7 +23,7 @@ class SyncService
      * Sync the IDs of contacts from a list.
      *
      * @param int $list_id The Hubspot list id
-     * @param int $count The number of contacts to sync at a time
+     * @param int $count The number of contacts to get at a time
      * @param int $vid_offset The offset to start with
      * @return int The number of contacts affected
      */
@@ -70,9 +70,11 @@ class SyncService
     /**
      * Get the list from Hubspot.
      *
-     * @param int $list_id
-     * @param int $count
-     * @param int $vid_offset
+     * @see http://developers.hubspot.com/docs/methods/lists/get_list_contacts
+     *
+     * @param int $list_id The Hubspot list id
+     * @param int $count The number of contacts to get
+     * @param int $vid_offset The offset to start at
      * @return \Fungku\HubSpot\Http\Response
      */
     function getList($list_id, $count = 100, $vid_offset = 0)
@@ -86,7 +88,9 @@ class SyncService
     /**
      * Update the contacts in Hubspot.
      *
-     * @param array $contacts
+     * @see http://developers.hubspot.com/docs/methods/contacts/batch_create_or_update
+     *
+     * @param array $contacts The contacts to update
      */
     function updateContacts($contacts = [])
     {
