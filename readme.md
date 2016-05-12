@@ -3,7 +3,6 @@
  [![License](https://img.shields.io/packagist/l/focuscanada/hubspot-custom-id.svg?maxAge=2592000)](https://github.com/focuscanada/hubspot-custom-id)
  [![Travis](https://travis-ci.org/focuscanada/hubspot-custom-id.svg?branch=master)](https://travis-ci.org/focuscanada/hubspot-custom-id)
  [![Test Coverage](https://codeclimate.com/github/focuscanada/hubspot-custom-id/badges/coverage.svg)](https://codeclimate.com/github/focuscanada/hubspot-custom-id/coverage)
- [![Code Climate](https://codeclimate.com/github/focuscanada/hubspot-custom-id/badges/gpa.svg)](https://codeclimate.com/github/focuscanada/hubspot-custom-id)
 
 You find you need to do anything fancy but there is no way to uniquely identify users apart from their
 email address? Well here is a hokey-pokey work-around.
@@ -16,6 +15,8 @@ to decode in pretty much any programming language as far as I am aware of.
 We can then use it to identify the user that clicked the email on the target page.
 
 ### Install
+
+Using [composer](https://getcomposer.org/):
 
 ```
 composer require focuscanada/hubspot-custom-id
@@ -34,9 +35,13 @@ Remember the ID of that list. (*It should be the number as the last component of
 
 ![list url](https://s3-us-west-2.amazonaws.com/ryanwinchester/code/hubspot-custom-id/list-url.png)
 
-##### 3. Use it
+##### 3. Use it (example)
 
 ```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
 use Focus\HubspotId\SyncService;
 use Fungku\HubSpot\HubSpotService;
 
