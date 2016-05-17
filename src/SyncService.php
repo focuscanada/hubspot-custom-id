@@ -39,14 +39,12 @@ class SyncService
     function syncList($list_id, $count = 100, $vid_offset = 0)
     {
         $updated = 0;
-        $has_more = true;
 
-        while ($has_more) {
+        do {
             $list = $this->getList($list_id, $count, $vid_offset);
-            $has_more = $list->{'has-more'};
             $vid_offset = $list->{'vid-offset'};
             $updated += $this->syncContacts($list->contacts);
-        }
+        } while ($list->{'has-more'});
 
         return $updated;
     }
