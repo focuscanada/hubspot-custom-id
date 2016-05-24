@@ -29,7 +29,7 @@ class SyncService
     }
 
     /**
-     * Sync the IDs of contacts from a list.
+     * Add the custom IDs of contacts from a list.
      *
      * @param int $list_id The Hubspot list id
      * @param int $count The number of contacts to sync at a time (max 100)
@@ -50,7 +50,7 @@ class SyncService
     }
 
     /**
-     * Sync the IDs of contacts.
+     * Add the custom IDs of an array of contacts.
      *
      * @param array $contacts The contacts to sync
      * @return int The number of contacts affected
