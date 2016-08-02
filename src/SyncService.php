@@ -11,7 +11,7 @@
 
 namespace Focus\HubspotId;
 
-use Fungku\HubSpot\HubSpotService;
+use SevenShores\Hubspot\Factory as Hubspot;
 
 class SyncService
 {
@@ -19,17 +19,17 @@ class SyncService
     private $property;
 
     /**
-     * @param HubSpotService $hubspot My Hubspot API client
+     * @param Hubspot $hubspot My Hubspot API client
      * @param string $property The name of the custom ID property
      */
-    function __construct(HubSpotService $hubspot, $property)
+    function __construct(Hubspot $hubspot, $property)
     {
         $this->hubspot = $hubspot;
         $this->property = $property;
     }
 
     /**
-     * Sync the IDs of contacts from a list.
+     * Add the custom IDs of all the contacts from a Hubspot list.
      *
      * @param int $list_id The Hubspot list id
      * @param int $count The number of contacts to sync at a time (max 100)
@@ -50,7 +50,7 @@ class SyncService
     }
 
     /**
-     * Sync the IDs of contacts.
+     * Add the custom IDs of an array of contacts.
      *
      * @param array $contacts The contacts to sync
      * @return int The number of contacts affected
